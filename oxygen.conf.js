@@ -9,18 +9,14 @@ module.exports = {
     //
     suites: [{
         name: 'Selenium',
-        cases: [{
-            path: './tests/selenium-with-po.js'
-        }]        
-    },{
-        name: 'Visual',
-        cases: [{
-            path: './tests/visual.js'
-        }]        
-    },{
-        name: 'PDF',
-        cases: [{
-            path: './tests/pdf.js'
+             cases: [{
+            //  path: './tests/login.js'},
+            //  {
+            //  path: './tests/homePage.js'
+            
+            //  },
+            // {
+            path: './tests/phoneIntakeCreateClaim.js'
         }]        
     }],
     //
@@ -33,8 +29,6 @@ module.exports = {
     concurrency: 1,
     capabilities: [{
         browserName: 'chrome',
-    },{
-        browserName: 'firefox',
     }],
     
       
@@ -42,10 +36,10 @@ module.exports = {
     // Parameters
     // ============
     //
-    /*parameters : {
-        file: '<excel or csv file path>',
+    parameters : {
+        file: './data/login.csv',
         mode: 'seq', // can be 'random' or 'all' as well
-    },*/
+    },
     
     // ============
     // Iterations
@@ -100,7 +94,7 @@ module.exports = {
     //
     reporting: {
         //outputDir: path.join(__dirname, 'reports'),
-        reporters: ['json'],
+        reporters: ['html'],
     },
     //
     // ==========

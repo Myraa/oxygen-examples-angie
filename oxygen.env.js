@@ -1,8 +1,8 @@
 module.exports = {
     default: {
-        baseUrl: "https://automationbookstore.dev/"
+        baseUrl: "https://test.salesforce.com/"
     },
     prod: {
-        baseUrl: "http://prod.automationbookstore.dev"
+        baseUrl: "http://login.salesforce.com"
     }
 };
